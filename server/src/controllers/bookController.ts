@@ -17,7 +17,7 @@ export const getBooks = async (req: Request, res: Response) => {
 //@Desc   get single book by id
 //@Access Public
 export const getBook = async (req: Request, res: Response) => {
-  const id = req.query.id;
+  const id = req.params.id;
   try {
     const book = await Book.findById(id);
     if (!book) {

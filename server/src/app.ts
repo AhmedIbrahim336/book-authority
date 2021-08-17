@@ -4,7 +4,7 @@ import connectDB from "./database/db";
 import dotenv from "dotenv";
 import bookRouter from "./routes/book";
 const app = express();
-const port = 3000;
+const port = 5000;
 
 // Setup env variables
 dotenv.config();
